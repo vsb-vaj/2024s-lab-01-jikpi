@@ -7,7 +7,7 @@
 // "javascript-is-the-best"
 
 // Your code:
-export const parametrize = (input) => {
+const parametrize = (input) => {
 
 };
 
@@ -18,7 +18,7 @@ export const parametrize = (input) => {
 // ➞ Hello Obi-wan from Starwars universe! It is nice to meet you! You look awesome for your 40, young Jedi!
 
 // Your code:
-export const giveSentenceForPerson = (obj) => {
+const giveSentenceForPerson = (obj) => {
 
 };
 
@@ -28,6 +28,6 @@ export const giveSentenceForPerson = (obj) => {
 // replace("Hello Javascript") ➞ "H*ll* J*v*scr*pt"
 
 // Your code:
-export const replace = (input) => {
+const replace = (input) => {
 
 };

@@ -6,7 +6,7 @@
 // arrayOfMultiples(17, 6) ➞ [17, 34, 51, 68, 85, 102]
 
 // Your code:
-export const arrayOfMultiples = (num, length) => {
+const arrayOfMultiples = (num, length) => {
     // ... write code ...
 };
 
@@ -19,7 +19,7 @@ export const arrayOfMultiples = (num, length) => {
 // changeDirection([1, 2]) ➞ [2, 1]
 
 // Your code:
-export const changeDirection = (array) => {
+const changeDirection = (array) => {
 // ... write code ...
 };
 
@@ -30,6 +30,6 @@ export const changeDirection = (array) => {
 // biggerArray([1,2,3], [2,3,4]) ➞ { array: [2,3,4], sum: 9 }
 
 // Your code:
-export const biggerArray = (array1, array2) => {
+const biggerArray = (array1, array2) => {
 // ... write code ...
 };

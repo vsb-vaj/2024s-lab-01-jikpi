@@ -7,7 +7,7 @@
 // * * * * *
 
 // Your code:
-export const drawTriangle = (length = 5) => {
+const drawTriangle = (length = 5) => {
   
     // ... write code ...
 };
@@ -27,7 +27,7 @@ export const drawTriangle = (length = 5) => {
 // J A V A S C R I P T
 
 // Your code:
-export const drawJavascriptWord = (word = "javascript") => {
+const drawJavascriptWord = (word = "javascript") => {
   // ... write code ...
 };
 
@@ -47,6 +47,6 @@ export const drawJavascriptWord = (word = "javascript") => {
 //   ];
 
 // Your code:
-export const getVehiclesAndTopSpeed = (vehicles) => {
+const getVehiclesAndTopSpeed = (vehicles) => {
   
 };
