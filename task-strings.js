@@ -8,7 +8,7 @@
 
 // Your code:
 const parametrize = (input) => {
-
+    return input.replaceAll(" ", "-").toLowerCase();
 };
 
 // 2 =================================
@@ -19,7 +19,7 @@ const parametrize = (input) => {
 
 // Your code:
 const giveSentenceForPerson = (obj) => {
-
+    return `Hello ${obj.name} from ${obj.location}! It is nice to meet you! You look awesome for your ${obj.age}, young ${obj.position}!`
 };
 
 // 3 =================================
@@ -29,5 +29,9 @@ const giveSentenceForPerson = (obj) => {
 
 // Your code:
 const replace = (input) => {
-
+    return input
+        .replaceAll("a", "*")
+        .replaceAll("e", "*")
+        .replaceAll("i", "*")
+        .replaceAll("o", "*");
 };

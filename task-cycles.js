@@ -8,6 +8,12 @@
 // Your code:
 const arrayOfMultiples = (num, length) => {
     // ... write code ...
+    const multiples = [];
+    for (let i = 0; i < length; i++) {
+        multiples.push(num * (i + 1));
+    }
+
+    return multiples;
 };
 
 // 2 =================================
@@ -21,6 +27,7 @@ const arrayOfMultiples = (num, length) => {
 // Your code:
 const changeDirection = (array) => {
 // ... write code ...
+    return array.reverse();
 };
 
 // 3 =================================
@@ -31,5 +38,24 @@ const changeDirection = (array) => {
 
 // Your code:
 const biggerArray = (array1, array2) => {
-// ... write code ...
+    const newobj = {
+        array: [],
+        sum: 0
+    }
+
+    let sum1 = 0;
+    array1.forEach((n1) => sum1 += n1);
+
+    let sum2 = 0;
+    array2.forEach((n1) => sum2 += n1);
+
+    if (sum1 > sum2) {
+        newobj.array = array1;
+        newobj.sum = sum1;
+    } else {
+        newobj.array = array2;
+        newobj.sum = sum2;
+    }
+
+    return newobj;
 };
