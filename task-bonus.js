@@ -8,8 +8,13 @@
 
 // Your code:
 const drawTriangle = (length = 5) => {
-  
+
     // ... write code ...
+    let stars = "*";
+    for (let i = 0; i < length; i++) {
+        console.log(stars);
+        stars += "*";
+    }
 };
 
 // 2#  ========== BONUS =======================
@@ -28,7 +33,25 @@ const drawTriangle = (length = 5) => {
 
 // Your code:
 const drawJavascriptWord = (word = "javascript") => {
-  // ... write code ...
+    const text = word.toUpperCase();
+
+    let curTextLenght = text.length;
+    const textLenght = curTextLenght;
+
+    let printText = "";
+    for (let i = 0; i < textLenght + 1; i++) {
+        for (let j = 0; j < (textLenght) - (textLenght - curTextLenght); j++) {
+            printText += " *";
+        }
+
+        for (let j = curTextLenght; j < textLenght; j++) {
+            printText += " " + text[j];
+        }
+
+        curTextLenght--;
+        console.log(printText);
+        printText = "";
+    }
 };
 
 
@@ -48,5 +71,22 @@ const drawJavascriptWord = (word = "javascript") => {
 
 // Your code:
 const getVehiclesAndTopSpeed = (vehicles) => {
-  
+    let returningVehicles = []
+
+    for (const vehicle of vehicles) {
+        const newVehicle = {
+            name: vehicle.name,
+            topSpeed: 0
+        }
+
+        for (const speed of vehicle.measuredSpeeds) {
+            if (speed > newVehicle.topSpeed) {
+                newVehicle.topSpeed = speed;
+            }
+        }
+
+        returningVehicles.push(newVehicle);
+    }
+
+    return returningVehicles;
 };
